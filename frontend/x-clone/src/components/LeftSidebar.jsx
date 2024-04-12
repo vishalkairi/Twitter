@@ -4,6 +4,7 @@ import { IoNotificationsSharp } from "react-icons/io5";
 import { FaUserLarge } from "react-icons/fa6";
 import { FaBookmark } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
+import { Link } from "react-router-dom";
 const LeftSidebar = () => {
   return (
     <div className="w-[20%]">
@@ -17,28 +18,34 @@ const LeftSidebar = () => {
           />
         </div>
         <div className="my-4">
-          <div className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer">
-            <GoHomeFill />
+          <Link
+            to={"/"}
+            className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer"
+          >
+            <GoHomeFill size={"30px"} />
             <h1 className="font-bold text-lg ml-2">Home</h1>
-          </div>
+          </Link>
           <div className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer">
-            <IoSearchSharp />
+            <IoSearchSharp size={"30px"} />
             <h1 className="font-bold text-lg ml-2">Explore</h1>
           </div>
           <div className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer">
-            <IoNotificationsSharp />
+            <IoNotificationsSharp size={"30px"} />
             <h1 className="font-bold text-lg ml-2">Notifications</h1>
           </div>
-          <div className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer">
-            <FaUserLarge />
+          <Link
+            to={"/profile/1"}
+            className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer"
+          >
+            <FaUserLarge size={"30px"} />
             <h1 className="font-bold text-lg ml-2">Profile</h1>
-          </div>
+          </Link>
           <div className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer">
-            <FaBookmark />
+            <FaBookmark size={"30px"} />
             <h1 className="font-bold text-lg ml-2">Bookmarks</h1>
           </div>
           <div className="flex items-center my-2 hover:bg-gray-100 px-4 py-2 rounded-full hover:cursor-pointer">
-            <FiLogOut />
+            <FiLogOut size={"30px"} />
             <h1 className="font-bold text-lg ml-2">Logout</h1>
           </div>
         </div>

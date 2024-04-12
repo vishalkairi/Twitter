@@ -18,17 +18,18 @@ const CreatePost = () => {
               <Avatar
                 src="https://pbs.twimg.com/profile_images/2587943780/1jhy0y59gvs7fwpdt6j9_400x400.jpeg"
                 size="40"
+                round={true}
               />
             </div>
             <input
               type="text"
-              className=" p-4 w-full outline-none"
+              className=" p-4 w-full outline-none text-xl"
               placeholder="What is happening?!"
             />
           </div>
           <div className="flex justify-between items-center border-b p-4 border-gray-200">
             <div>
-              <CiImageOn width="40" />
+              <CiImageOn size="24px" />
             </div>
             <button className=" bg-[#1d9bf0] px-6 py-2 rounded-full text-white font-semibold">
               Post
